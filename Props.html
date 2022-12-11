@@ -8,7 +8,7 @@
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
 <script type="text/babel">
-    function Btn({content, onClick}) {
+    function Btn({text, onClick}) {
         return <button 
             onClick = {onclick}
             style={{
@@ -18,22 +18,21 @@
             border : 0,
             borderRadius : 10,
         }}>
-        {content}
+        {text}
         </button>
     }
     Btn.propTypes = {
         text: PropTypes.string,
         fontSize: PropTypes.number,
-        
+
     }
-    const MemorizedBtn = React.memo(Btn)
     function App() {
         const [value, setValue] = React.useState("Save Changes");
         const changeValue = () => setValue("Revert Changes");
         return (
             <div>
-                <MemorizedBtn content={value} onClick={changeValue}/>
-                <MemorizedBtn content="Continue"/>
+                <Btn text={value} onClick={changeValue}/>
+                <Btn text="Continue"/>
             </div>
         )
     }
