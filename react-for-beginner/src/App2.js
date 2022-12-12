@@ -12,6 +12,9 @@ function App() {
   useEffect(() => {
       console.log("Call the API...")
   }, []);
+  useEffect(() => {
+      console.log("Serach For", keyword);
+  }, [keyword]);
   return (
     <div>
         <input value={keyword} type="text" placeholder="Search Here" onChange={onChange}/>
