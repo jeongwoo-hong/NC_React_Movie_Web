@@ -2,10 +2,14 @@ import styles from "./App.module.css";
 import { useState, useEffect } from "react";
 
 function Hello() {
-    useEffect(() => {
+    const byFn = () => {
+        console.log("bye :(");
+    }
+    const hiFn = () => {
         console.log("created :)");
-        return () => console.log("destroyed :("); // cleanup : when the component is gone 
-    }, [])
+        return byFn;
+    }
+    useEffect(hiFn, [])
     return <h1>Hello</h1>
 }
 
