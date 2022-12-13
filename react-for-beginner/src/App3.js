@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 
 function Hello() {
     useEffect(() => {
-        console.log("i'm here!")
+        console.log("created :)");
+        return () => console.log("destroyed :("); // cleanup : when the component is gone 
     }, [])
     return <h1>Hello</h1>
 }
