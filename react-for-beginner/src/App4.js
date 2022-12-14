@@ -21,6 +21,8 @@ function App4() {
             <input onChange={onChange} value={toDo} type="text" placeholder="Write your to do.." />
             <button>Add To Do</button>
         </form>
+        <hr />
+        {toDos.map((item) => <li>{item}</li>)}
     </div>
 }
 
