@@ -15,11 +15,11 @@ function App5() {
         <div>
             <h1>The Coins! ({coins.length})</h1>
             {loading ? <strong>Loading...</strong> : null}
-            <ul>
+            <select>
                 {coins.map((coin) => (
-                <li>{coin.name} ({coin.symbol}) : ${coin.quotes.USD.price} USD</li>
+                <option>{coin.name} ({coin.symbol}) : ${coin.quotes.USD.price} USD</option>
                 ))}
-            </ul>
+            </select>
         </div>
 
     )
