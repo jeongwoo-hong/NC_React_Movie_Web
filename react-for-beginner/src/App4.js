@@ -22,7 +22,7 @@ function App4() {
             <button>Add To Do</button>
         </form>
         <hr />
-        {toDos.map((item) => <li>{item}</li>)}
+        {toDos.map((item, index) => <li key={index}>{item}</li>)}
     </div>
 }
 
