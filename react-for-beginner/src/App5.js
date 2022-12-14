@@ -13,7 +13,7 @@ function App5() {
     }, [])
     return (
         <div>
-            <h1>The Coins! ({coins.length})</h1>
+            <h1>The Coins! {loading ? "" : `(${coins.length})`}</h1>
             {loading ? <strong>Loading...</strong> : null}
             <select>
                 {coins.map((coin) => (
