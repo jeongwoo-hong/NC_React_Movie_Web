@@ -7,3 +7,5 @@ function MovieApp() {
         {loading ? <h1>Loading...</h1> : null}
     </div>
 }
+
+export default MovieApp;
