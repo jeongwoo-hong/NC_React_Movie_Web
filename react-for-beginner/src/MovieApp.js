@@ -1,0 +1,9 @@
+import { useState } from "react";
+
+function MovieApp() {
+    const [loading, setLoading] = useState(true);
+
+    return <div>
+        {loading ? <h1>Loading...</h1> : null}
+    </div>
+}
