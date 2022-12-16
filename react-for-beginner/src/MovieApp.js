@@ -19,7 +19,7 @@ function MovieApp() {
         {loading ? <h1>Loading...</h1> : movies.map(movie => (
         <div key={movie.id}>
             <img src={movie.medium_cover_image} />
-            <h2>{movie.title}</h2>
+            <h2>{movie.title}</h2><h3>({movie.year})</h3>
             <p>{movie.summary}</p>
             <ul>
                 {movie.geners.map((g) => <li key={g}>{g}</li>)}
