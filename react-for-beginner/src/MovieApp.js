@@ -17,9 +17,7 @@ function MovieApp() {
     }, []);
     return <div>
         {loading ? <h1>Loading...</h1> : movies.map(movie => (
-        <div key={movie.id}>
-            
-            </div>
+        <Movie coverImg={movie.medium_cover_image} />
         ))}
     </div>
 }
