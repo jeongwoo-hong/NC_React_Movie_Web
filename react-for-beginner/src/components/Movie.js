@@ -5,13 +5,15 @@ function Movie({ coverImg, title, summary, genres }){
             <img src={coverImg} alt={title} />
             <h2>{title}</h2>
             <p>{summary}</p>
-            {hasOwnProperty("genres") ?
+            {/* {hasOwnProperty("genres") ? */}
             <ul>
                 {genres.map((g) => <li key={g}>{g}</li>)}
-            </ul> : null}
+            </ul>
+             {/* : null} */}
     </div>;
 }
 
+// eslint-disable-next-line react/no-typos
 Movie.PropTypes = {
     coverImg: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
