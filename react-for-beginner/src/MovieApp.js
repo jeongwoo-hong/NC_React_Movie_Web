@@ -17,7 +17,12 @@ function MovieApp() {
     }, []);
     return <div>
         {loading ? <h1>Loading...</h1> : movies.map(movie => (
-        <Movie coverImg={movie.medium_cover_image} title={movie.title} summary={movie.summary} genres={movie.genres} />
+        <Movie 
+        coverImg={movie.medium_cover_image} 
+        title={movie.title} 
+        summary={movie.summary} 
+        genres={movie.genres} 
+        />
         ))}
     </div>
 }

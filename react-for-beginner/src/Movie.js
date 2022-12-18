@@ -1,6 +1,6 @@
-function Movie({coverImg, title, summary, genres}){
+function Movie({ coverImg, title, summary, genres }){
     return <div>
-            <img src={medium_cover_image} />
+            <img src={coverImg} />
             <h2>{title}</h2>
             <p>{summary}</p>
             <ul>
