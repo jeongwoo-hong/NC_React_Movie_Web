@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 function Movie({ coverImg, title, summary, genres }){
     return <div>
             <img src={coverImg} alt={title} />
@@ -7,6 +9,10 @@ function Movie({ coverImg, title, summary, genres }){
                 {genres.map((g) => <li key={g}>{g}</li>)}
             </ul>
     </div>;
+}
+
+Movie.PropTypes = {
+    coverImg: PropTypes.string.isRequired
 }
 
 export default Movie;
