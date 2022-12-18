@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useEffect, useState } from "react";
+import Movie from "./components/Movie"
 
 function MovieApp() {
     const [loading, setLoading] = useState(true);
