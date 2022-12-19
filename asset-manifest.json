@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/react_movieweb.git/static/js/main.5c8e346c.js",
-    "index.html": "/react_movieweb.git/index.html",
-    "main.5c8e346c.js.map": "/react_movieweb.git/static/js/main.5c8e346c.js.map"
+    "main.js": "/react_movieweb/static/js/main.5c8e346c.js",
+    "index.html": "/react_movieweb/index.html",
+    "main.5c8e346c.js.map": "/react_movieweb/static/js/main.5c8e346c.js.map"
   },
   "entrypoints": [
     "static/js/main.5c8e346c.js"
